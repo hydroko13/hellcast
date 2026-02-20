@@ -30,8 +30,12 @@ int main() {
             if (e.type == SDL_QUIT) {
                 done = true;
             }
+            else if (e.type == SDL_KEYDOWN) {
+                if (e.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
+                    done = true;
+                }
+            }
 
-            
         }
     }
 
